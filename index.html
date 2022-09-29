@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url(images/bg.1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 450px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Login</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li id="home"><a href="#">Home</a></li>
+                <li> <a class="button" target="_blank" href="https://nottoday0007.github.io/khan/">About me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://www.linkedin.com/in/arif-hasan-rifat-342b181a4/">Contact</a></li>
+                <li id="logINN"><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div>
+            <p id="khan">Seek Coding</p>
+        </div>
+        </header>
+
+         <div id="fullDisplay" class="cont"> 
+             
+        <div class="box">
+
+         <div class="khan">
+                <button type="button" id="loginButton" class="togg">Log in</button>
+                <button type="button" id="registerButton" class="togg">Register</button>
+            </div> 
+      <div id="logIn">
+           <form id="oo" class="input">
+                <input type="text" class="user" placeholder="Email Id">
+                <input type="text" class="user" placeholder="Enter Password">
+                <br>
+                <br>
+                <input type="checkbox"> <span id="remember">Remember Password</span>
+                <button type="submit" class="submit">Login</button>
+            </form> 
+        </div>
+
+       <div id="regisTer">
+        <div id="none">
+            <form id="ooo" class="input">
+                <input type="text" class="user" placeholder="User Id">
+                <input type="email" class="user" placeholder="Email Id">
+                <input type="text" class="user" placeholder="Enter Password">
+                <br>
+                <br>
+                <input type="checkbox"><span  id="remember">I agree to the terms & conditions</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+        </div> 
+        </div>
+        </div>
+
+<script>
+    
+    const loginBtn = document.getElementById("logINN");
+    loginBtn.addEventListener("click", function(){
+    const fullDisplay = document.getElementById("fullDisplay");
+    fullDisplay.style.display="block"; 
+    var full = document.getElementById("regisTer");
+    full.style.display="none";
+})   
+const loG = document.getElementById("home");
+    loG.addEventListener("click", function(){
+    const fDisplay = document.getElementById("fullDisplay");
+    fDisplay.style.display="none"; 
+
+}) 
+
+    const loGIN= document.getElementById("loginButton");
+    loGIN.addEventListener("click", function(){
+        const fullDIS = document.getElementById("logIn");
+    fullDIS.style.display="block";
+    const fulDis = document.getElementById("regisTer");
+    fulDis.style.display="none";
+    })
+    const logIn= document.getElementById("registerButton");
+    logIn.addEventListener("click", function(){
+    const fullDIS = document.getElementById("regisTer");
+    fullDIS.style.display="block";
+    const fuLL = document.getElementById("logIn");
+    fuLL.style.display="none";
+     })
+    </script>
+            
+          
+</body>
+</html>
